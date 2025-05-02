@@ -1,0 +1,121 @@
+ 
+/* General Page Setup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  .heading {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Vision and Mission Container */
+  .vision-mission {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Vision and Mission Flexbox Layout */
+  .vision-mission .Vision, .vision-mission .Mission {
+    width: 48%;
+    margin: 0 1%;
+  }
+  
+  /* Vision and Mission Section Titles */
+  .Vision h2, .Mission h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Vision and Mission Lists */
+  .Vision ul, .Mission ul {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-left: 20px;
+  }
+  
+  /* Bold Text for Mission Section */
+  .Mission h2 b {
+    color: #031b2b;
+    font-weight: bold;
+  }
+  
+  /* Quality Policy Section */
+  .Q&P of insti {
+    margin-top: 30px;
+  }
+  
+  .Q&P of insti h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .Q&P of insti p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .footer i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  /* Footer Icons */
+  .footer i:hover {
+    color: #3498db;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .vision-mission {
+      padding: 20px;
+    }
+  
+    .vision-mission .Vision, .vision-mission .Mission {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .Vision h2, .Mission h2, .Q&P of insti h2 {
+      font-size: 24px;
+    }
+  
+    .Vision ul, .Mission ul {
+      font-size: 16px;
+    }
+  
+    .Q&P of insti p {
+      font-size: 16px;
+    }
+  }
+ 
+ 

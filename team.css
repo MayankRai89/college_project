@@ -1,0 +1,207 @@
+
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://via.placeholder.com/1600x900'); /* Replace this URL with your desired background image URL */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header section */
+.heading {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+/* Team section */
+.team {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for contrast */
+    border-radius: 12px;
+    padding-bottom: 50px;
+}
+
+/* Team container - flex layout */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Team member card styles */
+.team-member {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on team member card */
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/* Team member image styling */
+.team-member img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Team member name and role */
+.member-info h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+.member-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .member-info h3 {
+        font-size: 20px;
+    }
+
+    .member-info p {
+        font-size: 16px;
+    }
+}
+ 
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://via.placeholder.com/1600x900'); /* Replace this URL with your desired background image URL */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header section */
+.heading {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+/* Team section */
+.team {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency for contrast */
+    border-radius: 12px;
+    padding-bottom: 50px;
+}
+
+/* Team container - flex layout */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Team member card styles */
+.team-member {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on team member card */
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+/* Team member image styling */
+.team-member img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Team member name and role */
+.member-info h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+.member-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .member-info h3 {
+        font-size: 20px;
+    }
+
+    .member-info p {
+        font-size: 16px;
+    }
+}
+ 

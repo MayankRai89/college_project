@@ -1,0 +1,50 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>Contact Us</h1>
+    </header>
+    
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <h3>Our Address</h3>
+            <p>Gyan Ganga Institute of Technology and Sciences,<br>
+               Jabalpur, Madhya Pradesh, India</p>
+
+            <h3>Call Us</h3>
+            <p>+91 123 456 7890</p>
+
+            <h3>Email</h3>
+            <p>info@ggits.org</p>
+        </div>
+
+        <div class="map" id="mapid" style="height: 350px; width: 100%;"></div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Gyan Ganga Institute of Technology and Sciences. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('mapid').setView([23.129050, 79.874385], 15);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([23.129050, 79.874385]).addTo(map)
+            .bindPopup('Gyan Ganga Institute of Technology and Sciences')
+            .openPopup();
+    </script>
+</body>
+</html>

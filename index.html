@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Campus Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo-title">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZRXGXslNpdwoYXbzlGt9vEzv_FpqK715p1vxjZ7B3IDKVXxOBguPNePUTxdcz1yfScfe9uRQfmK0Vp1ds3zpTCvDA3rNtbXZPM1lgXjO2erHcMutqUL7DL0nZ-gC5kKF-KpLgNe7UfsQ/s320/logo.jpg"
+        alt="College Logo" class="logo" />
+      <h1>Gyan Ganga College Campus Map</h1>
+    </div>
+
+    <nav class="nav">
+      <a href="INDEX.HTML">Home</a>
+      <div class="sub-dropdown">
+        <a href="#">About <i class="fa fa-caret-down"></i></a>
+        <div class="sub-dropdown-content">
+          <a href="about.html">About GGITS</a>
+          <a href="vis&mis.html">Vision & Mission</a>
+          <a href="team.html">Team</a>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact us</a>
+      <a href="Images.html">Images</a>
+      <a href="Feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-text">
+      <h2>Welcome to GYAN GANGA College</h2>
+      <p>Navigate your way around campus with ease!</p>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <!-- Title and Search Box above the map -->
+    <div class="map-header">
+      <h2>Interactive Campus Map</h2>
+      <section class="map-search-box">
+        <input type="text" id="searchInput" placeholder="Search for a location..." oninput="highlightSuggestions()" />
+        <button onclick="searchLocation()"><i class="fas fa-search"></i></button>
+        <ul id="suggestions" class="suggestions-list"></ul>
+      </section>
+    </div>
+  
+    <!-- Map Container -->
+    <div class="map-display-container">
+      <div id="map"></div>
+      <div class="highlighted-locations">
+        <h3>Highlighted Locations</h3>
+        <ul>
+          <li>Main Gate</li>
+          <li>Globe</li>
+          <li>Library</li>
+          <li>ITS Canteen</li>
+          <li>CT Canteen</li>
+          <li>ITS Parking</li>
+          <li>CT parking</li>
+          <li>Basketball Court</li>
+          <li>College Ground</li>
+          <li>Herbal Garden</li>
+          <li>Workshop</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="cards">
+    <div class="card">
+      <h3>Departments</h3>
+      <p>Explore all academic departments and their buildings.</p>
+    </div>
+    <div class="card">
+      <h3>Notices</h3>
+      <p>Stay up to date with important announcements.</p>
+    </div>
+    <div class="card">
+      <h3>Events</h3>
+      <p>Check out upcoming seminars, fests, and workshops.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ganga Ganga College. All rights reserved.</p>
+    <p>
+      <a href="https://www.facebook.com/gyangangaits/" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/gyanganga_official/?hl=en" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      
+      <a href="https://x.com/gyangangaltd" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </p>
+  </footer>
+
+  <!-- Scripts moved to the bottom -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeP67D2fuBQJimpnjrC3O-c0XrtI73kR8&callback=initMap"
+    async defer></script>
+
+</body>
+
+</html>

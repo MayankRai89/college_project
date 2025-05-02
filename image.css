@@ -1,0 +1,149 @@
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+  }
+
+  .header {
+    background-color: #004080;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+  .sub-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .sub-dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+  }
+
+  .banner {
+    background: url('https://images.shiksha.com/mediadata/images/1539684516phpkJFyjr.jpeg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .banner-text h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .banner-text p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.03);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .caption {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  /* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+  }
+  
+  .footer i {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .footer i:hover {
+    color: #3498db;
+  }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  
+  .footer a:hover {
+    color: #3498db; /* hover pe blue ho jayega */
+    text-decoration: underline;
+  }
+  
+  
