@@ -22,7 +22,7 @@ map.scrollWheelZoom.enable();
 const logo = L.control({ position: 'bottomright' });
 logo.onAdd = function () {
   const div = L.DomUtil.create('div', 'custom-logo');
-  div.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Location_dot_black.svg/2048px-Location_dot_black.svg.png" alt="Logo" style="width:40px;">';
+  div.innerHTML = '<img src="logo.jpg" alt="Logo" style="width:40px;">';
   return div;
 };
 logo.addTo(map);
